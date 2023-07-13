@@ -14,7 +14,7 @@ package org.github.flytreeleft.nexus3.keycloak.plugin.internal;
 
 import java.util.Collections;
 import java.util.Set;
-import java.util.Util;
+import java.util.List;
 import javax.enterprise.inject.Typed;
 import javax.inject.Named;
 import javax.inject.Singleton;
