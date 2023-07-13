@@ -55,6 +55,16 @@ public class KeycloakAuthorizationManager extends AbstractReadOnlyAuthorizationM
     }
 
     @Override
+    public Privilege getPrivilegeByName(String privilegeName) throws NoSuchPrivilegeException {
+        throw new NoSuchPrivilegeException("Keycloak plugin doesn't support privileges");
+    }
+
+    @Override
+    public List<Privilege> getPrivileges(final Set<String> privilegeIds) {
+        return Collections.emptyList();
+    }
+
+    @Override
     public Role getRole(String roleId) throws NoSuchRoleException {
         Role role = this.client.findRoleByRoleId(roleId);
         if (role == null) {
