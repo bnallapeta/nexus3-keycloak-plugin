@@ -5,7 +5,7 @@
 
     <groupId>org.github.flytreeleft</groupId>
     <artifactId>nexus3-keycloak-plugin</artifactId>
-    <version>0.7.0</version>
+    <version>0.8.3</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <packaging>bundle</packaging>
 
@@ -27,7 +27,7 @@
     <parent>
         <groupId>org.sonatype.nexus.plugins</groupId>
         <artifactId>nexus-plugins</artifactId>
-        <version>3.58.0-01</version>
+        <version>3.57.0-01</version>
     </parent>
 
     <properties>
@@ -45,8 +45,8 @@
     </issueManagement>
 
     <organization>
-        <name>flytreeleft</name>
-        <url>https://www.flytreeleft.com</url>
+        <name>Crazydan Studio</name>
+        <url>https://crazydan.org</url>
     </organization>
 
     <scm>
@@ -59,9 +59,9 @@
         <developer>
             <id>flytreeleft</id>
             <name>flytreeleft</name>
-            <email>hello@flytreeleft.com</email>
+            <email>flytreeleft@126.com</email>
             <url>https://github.com/flytreeleft</url>
-            <organization>flytreeleft</organization>
+            <organization>Crazydan Studio</organization>
             <roles>
                 <role>project-owner</role>
                 <role>project-developer</role>
@@ -84,8 +84,12 @@
             <url>https://github.com/TarasRozputnii</url>
         </contributor>
         <contributor>
-            <name>Stakater</name>
-            <url>https://github.com/stakater</url>
+            <name>rverchere</name>
+            <url>https://github.com/rverchere</url>
+        </contributor>
+        <contributor>
+            <name>pantovad</name>
+            <url>https://github.com/pantovad</url>
         </contributor>
     </contributors>
 
@@ -213,12 +217,12 @@
         <repository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/bnallapeta/nexus3-keycloak-plugin</url>
+            <url>https://maven.pkg.github.com/${env.GITHUB_USERNAME}/nexus3-keycloak-plugin</url>
         </repository>
         <snapshotRepository>
             <id>github</id>
             <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/bnallapeta/nexus3-keycloak-plugin</url>
+            <url>https://maven.pkg.github.com/${env.GITHUB_USERNAME}/nexus3-keycloak-plugin</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
